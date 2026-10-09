@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QC Nội quy học sinh 2026–2027 | Trường THCS Văn Lương</title>
+<meta name="description" content="Quy chế Nội quy học sinh Trường THCS Văn Lương, năm học 2026–2027">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; -webkit-text-size-adjust:100%; }
+  body {
+    font-family: "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    background:#eef2f7; color:#1f2a37; line-height:1.7; font-size:17px;
+  }
+  .page { max-width:1080px; margin:0 auto; background:#fff; box-shadow:0 0 40px rgba(11,61,145,.08); }
+  section { scroll-margin-top:84px; }
+
+  /* STICKY NAV */
+  .topnav {
+    position:sticky; top:0; z-index:100;
+    background:#0b3d91; color:#fff;
+    display:flex; align-items:center; gap:8px;
+    padding:0 16px; height:60px;
+    box-shadow:0 2px 12px rgba(0,0,0,.18);
+  }
+  .topnav .brand { font-weight:800; font-size:16px; white-space:nowrap; margin-right:6px; }
+  .topnav .brand span { color:#ffd166; }
+  .topnav .links { display:flex; gap:4px; overflow-x:auto; scrollbar-width:none; flex:1; }
+  .topnav .links::-webkit-scrollbar { display:none; }
+  .topnav .links a {
+    color:#fff; text-decoration:none; font-size:14.5px; font-weight:600;
+    padding:10px 12px; border-radius:10px; white-space:nowrap;
+  }
+  .topnav .links a:active, .topnav .links a:hover { background:rgba(255,255,255,.16); }
+  .menu-btn {
+    display:none; background:rgba(255,255,255,.14); border:1px solid rgba(255,255,255,.45);
+    color:#fff; font-size:22px; border-radius:12px; width:50px; height:50px;
+    cursor:pointer; flex-shrink:0; margin-left:auto;
+  }
+  .menu-btn:active { background:rgba(255,255,255,.28); }
+  .mobile-menu {
+    display:none; position:absolute; top:60px; left:0; right:0; z-index:101;
+    background:#0a357e; flex-direction:column; padding:10px 14px 14px;
+    box-shadow:0 14px 28px rgba(0,0,0,.3); max-height:70vh; overflow-y:auto;
+  }
+  .mobile-menu.open { display:flex; }
+  .mobile-menu a {
+    color:#fff; text-decoration:none; font-size:16.5px; font-weight:600;
+    padding:14px 12px; border-radius:10px; min-height:54px;
+    display:flex; align-items:center; border-bottom:1px solid rgba(255,255,255,.08);
+  }
+  .mobile-menu a:active { background:rgba(255,255,255,.14); }
+
+  /* HERO */
+  .hero {
+    background: linear-gradient(135deg, #0b3d91 0%, #1565d8 55%, #0aa1dd 100%);
+    color:#fff; padding:64px 40px 48px; position:relative; overflow:hidden;
+  }
+  .hero::before{
+    content:"🎒📚"; position:absolute; right:24px; bottom:8px; font-size:120px; opacity:.14;
+    transform:rotate(-8deg); pointer-events:none;
+  }
+  .hero::after{
+    content:""; position:absolute; right:-60px; top:-60px; width:300px; height:300px;
+    border-radius:50%; background:rgba(255,255,255,.08);
+  }
+  .hero .school { font-size:15px; letter-spacing:2px; text-transform:uppercase; opacity:.92; margin-bottom:8px; }
+  .hero h1 { font-size:clamp(28px, 6.5vw, 44px); line-height:1.25; margin-bottom:12px; font-weight:800; }
+  .hero .sub { font-size:clamp(15px, 2.6vw, 17.5px); opacity:.94; max-width:780px; }
+  .hero .draft {
+    display:inline-block; margin-top:16px; background:#ffb703; color:#1f2a37;
+    font-weight:700; font-size:14px; padding:8px 18px; border-radius:24px;
+    text-transform:uppercase; letter-spacing:1px;
+  }
+  .cta-row { display:flex; gap:10px; margin-top:20px; flex-wrap:wrap; }
+  .cta {
+    display:inline-flex; align-items:center; justify-content:center; gap:8px;
+    min-height:48px; padding:10px 20px;
+    border-radius:14px; font-weight:700; font-size:16px; text-decoration:none;
+  }
+  .cta.primary { background:#ffb703; color:#1f2a37; box-shadow:0 4px 14px rgba(0,0,0,.18); }
+  .cta.parent {
+    background:linear-gradient(135deg,#ff6b9d,#d6336c); color:#fff;
+    box-shadow:0 4px 16px rgba(214,51,108,.45);
+    animation:ctaPulse 2.2s ease-in-out infinite;
+  }
+  @keyframes ctaPulse {
+    0%,100% { box-shadow:0 4px 16px rgba(214,51,108,.45), 0 0 0 0 rgba(255,107,157,.45); }
+    50% { box-shadow:0 4px 16px rgba(214,51,108,.45), 0 0 0 10px rgba(255,107,157,0); }
+  }
+  .cta:active { transform:scale(.97); }
+  @media (prefers-reduced-motion: reduce){ .cta.parent{ animation:none; } }
+  .stats { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-top:24px; }
+  .stat {
+    display:flex; align-items:center; gap:12px;
+    background:rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.28);
+    border-radius:16px; padding:12px 14px;
+  }
+  .stat .ic {
+    width:46px; height:46px; flex-shrink:0; border-radius:13px;
+    background:rgba(255,255,255,.2); display:flex; align-items:center; justify-content:center;
+    font-size:24px;
+  }
+  .stat .num { font-size:23px; font-weight:800; line-height:1.15; }
+  .stat .lbl { font-size:12.5px; opacity:.93; line-height:1.35; }
+
+  /* TOC — dropdown */
+  .toc { padding:28px 40px 8px; }
+  .toc h3 { font-size:18px; color:#0b3d91; margin-bottom:14px; }
+  .toc-select {
+    width:100%; min-height:60px; padding:12px 52px 12px 18px;
+    font-size:16.5px; font-weight:600; color:#0b3d91; font-family:inherit;
+    background-color:#f2f6fb; border:2px solid #c9d9ef; border-radius:14px;
+    appearance:none; -webkit-appearance:none; cursor:pointer;
+    background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="%230b3d91" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>');
+    background-repeat:no-repeat; background-position:right 16px center;
+  }
+  .toc-select:focus { outline:none; border-color:#1565d8; box-shadow:0 0 0 3px rgba(21,101,216,.18); }
+
+  /* SECTION */
+  section { padding:36px 40px; }
+  section.alt { background:#f6f9fd; }
+  .sec-head { display:flex; align-items:center; gap:16px; margin-bottom:22px; }
+  .sec-num {
+    width:56px; height:56px; border-radius:16px; display:flex; align-items:center; justify-content:center;
+    font-size:27px; color:#fff; flex-shrink:0; box-shadow:0 4px 10px rgba(0,0,0,.12);
+  }
+  .sec-head h2 { font-size:clamp(20px, 3.8vw, 26px); color:#0b3d91; line-height:1.35; }
+  .sec-head p { font-size:14.5px; color:#5b6b7c; }
+  .c1 .sec-num { background:#1565d8; } .c2 .sec-num { background:#0a9b6c; }
+  .c3 .sec-num { background:#9c5cdd; } .c4 .sec-num { background:#e07b00; }
+  .c5 .sec-num { background:#d6336c; } .c6 .sec-num { background:#0aa1dd; }
+  .c7 .sec-num { background:#2f9e44; } .c8 .sec-num { background:#e67700; }
+  .c9 .sec-num { background:#c2255c; } .c10 .sec-num { background:#5f3dc4; }
+  .c11 .sec-num { background:#0b7285; }
+
+  h3.block-title { font-size:18.5px; color:#0b3d91; margin:24px 0 14px; }
+  h3.block-title:first-child { margin-top:0; }
+
+  /* TIMELINE */
+  .timeline { position:relative; margin:8px 0 0 8px; padding-left:32px; border-left:4px solid #1565d8; }
+  .t-item { position:relative; margin-bottom:22px; }
+  .t-item::before{
+    content:""; position:absolute; left:-42px; top:6px; width:16px; height:16px;
+    border-radius:50%; background:#1565d8; border:3px solid #fff; box-shadow:0 0 0 3px #1565d8;
+  }
+  .t-time { font-weight:800; color:#0b3d91; font-size:18.5px; }
+  .t-desc { font-size:16.5px; }
+
+  /* CARDS */
+  .grid { display:grid; gap:16px; }
+  .g2 { grid-template-columns:1fr 1fr; }
+  .g3 { grid-template-columns:1fr 1fr 1fr; }
+  .g4 { grid-template-columns:1fr 1fr 1fr 1fr; }
+  .card {
+    background:#fff; border-radius:16px; padding:20px 22px;
+    border:1px solid #e2e8f0; box-shadow:0 2px 8px rgba(11,61,145,.06);
+  }
+  .card h3 { font-size:17px; color:#0b3d91; margin-bottom:10px; }
+  .card ul { margin-left:20px; font-size:16px; }
+  .card li { margin-bottom:7px; }
+  .card.icon-top { text-align:center; }
+  .card.icon-top .big {
+    font-size:40px; margin-bottom:10px; display:inline-flex; align-items:center; justify-content:center;
+    width:76px; height:76px; border-radius:50%; background:#eef4fd;
+  }
+  .card.icon-top h3 { text-align:center; }
+  .card.icon-top ul { text-align:left; }
+
+  /* FORBIDDEN */
+  .forbid { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
+  .forbid .card { border-left:6px solid #d6336c; font-size:16px; }
+  .forbid .n { font-size:28px; font-weight:800; color:#d6336c; }
+
+  /* LADDER */
+  .ladder { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+  .step { border-radius:16px; padding:22px; color:#fff; }
+  .step .lvl { font-size:13.5px; text-transform:uppercase; letter-spacing:1px; opacity:.88; }
+  .step h3 { font-size:19px; margin:8px 0 10px; }
+  .step p { font-size:15.5px; }
+  .s1 { background:linear-gradient(135deg,#f6a21e,#e07b00); }
+  .s2 { background:linear-gradient(135deg,#f03e3e,#c2255c); }
+  .s3 { background:linear-gradient(135deg,#862e9c,#5f3dc4); }
+
+  /* HIGHLIGHT */
+  .highlight {
+    background:linear-gradient(135deg,#fff8e1,#ffecb3); border:2px solid #ffb703;
+    border-radius:18px; padding:26px; display:flex; gap:22px; align-items:center; flex-wrap:wrap;
+  }
+  .highlight .big { font-size:52px; }
+  .highlight h3 { color:#8a5a00; font-size:20px; margin-bottom:8px; }
+  .highlight p { font-size:16.5px; }
+
+  /* TWO COL */
+  .two-col { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+  .panel { border-radius:16px; padding:22px 24px; }
+  .panel.rights { background:#e6f7ef; border:1px solid #9bdfba; }
+  .panel.duties { background:#e7f0fd; border:1px solid #a9c8f5; }
+  .panel h3 { font-size:18px; margin-bottom:12px; color:#0b3d91; }
+  .panel ol, .panel ul { margin-left:20px; font-size:16px; }
+  .panel li { margin-bottom:8px; }
+
+  /* PARENT BANNER */
+  .parent-banner {
+    background:linear-gradient(135deg,#0b7285,#15aabf); color:#fff;
+    border-radius:18px; padding:28px; margin-top:8px;
+  }
+  .parent-banner h3 { font-size:20px; margin-bottom:10px; }
+  .parent-banner p, .parent-banner li { font-size:16.5px; }
+  .parent-banner ul { margin-left:20px; }
+  .parent-banner li { margin-bottom:6px; }
+
+  /* BACK TO TOP */
+  #toTop {
+    position:fixed; right:18px; bottom:18px; z-index:100;
+    width:56px; height:56px; border-radius:50%; border:none;
+    background:#0b3d91; color:#fff; font-size:24px; cursor:pointer;
+    box-shadow:0 4px 14px rgba(0,0,0,.25); display:none;
+  }
+  #toTop.show { display:block; }
+
+  /* FOOTER */
+  .foot { background:#0b3d91; color:#fff; padding:34px 40px; font-size:15.5px; }
+  .foot .cols { display:flex; gap:30px; flex-wrap:wrap; }
+  .foot .col { flex:1; min-width:220px; }
+  .foot h4 { font-size:16px; margin-bottom:10px; color:#ffd166; }
+  .foot ul { margin-left:20px; opacity:.94; }
+  .foot li { margin-bottom:5px; }
+  .credit { text-align:center; margin-top:24px; font-size:14px; opacity:.85; border-top:1px solid rgba(255,255,255,.2); padding-top:18px; }
+
+  /* MOBILE */
+  @media (max-width:760px){
+    body { font-size:16.5px; }
+    .g2,.g3,.g4,.forbid,.ladder,.two-col{ grid-template-columns:1fr; }
+    .topnav .links { display:none; }
+    .menu-btn { display:block; }
+    .cta-row { flex-direction:column; }
+    .cta { width:100%; }
+    .stats { grid-template-columns:1fr 1fr; gap:10px; }
+    .stat { padding:10px 12px; gap:10px; }
+    .stat .ic { width:42px; height:42px; font-size:22px; }
+    .hero{ padding:48px 22px 36px; }
+    section{ padding:30px 20px; }
+    .toc{ padding:22px 20px 6px; }
+    .foot{ padding:28px 20px; }
+    .topnav .brand { font-size:14.5px; }
+    .highlight { padding:22px 20px; }
+  }
+  @media print{
+    body{ background:#fff; } .page{ max-width:none; box-shadow:none; }
+    .topnav, .toc, #toTop, .cta-row { display:none; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- STICKY NAV -->
+  <nav class="topnav">
+    <div class="brand">🏫 Trường THCS <span>Văn Lương, xã Long Điền</span></div>
+    <div class="links">
+      <a href="#thoi-gian">⏰ Thời gian</a>
+      <a href="#quyen-nghia-vu">⚖️ Quyền &amp; NV</a>
+      <a href="#trang-phuc">👔 Trang phục</a>
+      <a href="#hoc-tap">💡 Học tập</a>
+      <a href="#ung-xu">🤝 Ứng xử</a>
+      <a href="#tai-san">🏫 Tài sản</a>
+      <a href="#an-toan">🛵 An toàn</a>
+      <a href="#hoc-phi">💰 Học phí</a>
+      <a href="#cam">⛔ Cấm</a>
+      <a href="#khen-thuong">🏆 Khen–Kỷ luật</a>
+      <a href="#phu-huynh">👨‍👩‍👧 Phụ huynh</a>
+    </div>
+    <button class="menu-btn" id="menuBtn" aria-label="Mở menu điều hướng" aria-expanded="false">☰</button>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#thoi-gian">⏰ Thời gian học tập &amp; chuyên cần</a>
+      <a href="#quyen-nghia-vu">⚖️ Quyền &amp; nghĩa vụ học sinh</a>
+      <a href="#trang-phuc">👔 Trang phục &amp; tác phong</a>
+      <a href="#hoc-tap">💡 Nề nếp học tập · AI</a>
+      <a href="#ung-xu">🤝 Ứng xử · Chống bạo lực · MXH</a>
+      <a href="#tai-san">🏫 Tài sản · Vệ sinh · SGK</a>
+      <a href="#an-toan">🛵 An toàn giao thông · PCCC</a>
+      <a href="#hoc-phi">💰 Học phí &amp; hỗ trợ</a>
+      <a href="#cam">⛔ 9 hành vi không được làm</a>
+      <a href="#khen-thuong">🏆 Khen thưởng &amp; kỷ luật</a>
+      <a href="#phu-huynh">👨‍👩‍👧 Phối hợp phụ huynh</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="school">Trường THCS Văn Lương, Xã Long Điền, TP. Hồ Chí Minh</div>
+    <h1>📘 Dự thảo Quy chế Nội quy học sinh <br> ⏰ Năm học 2026–2027</h1>
+    <div class="sub">Dự thảo Quyết định ban hành Quy chế — Căn cứ Luật Giáo dục 2019 (sửa đổi 2025), Thông tư 15/2026, 19/2025, 22/2021, 26/2009, Nghị định 271/2026, Quyết định 5067/QĐ-UBND và Công văn 7608/SGDĐT-KHTC.</div>
+    <span class="draft"> Dự thảo · Chờ ký ban hành</span>
+    <div class="cta-row">
+      <a class="cta primary" href="#thoi-gian">📖 Xem toàn bộ nội quy</a>
+      <a class="cta parent" href="#phu-huynh">👨‍👩‍👧 Dành cho phụ huynh →</a>
+    </div>
+    <div class="stats">
+      <div class="stat"><div class="ic">📘</div><div><div class="num">12</div><div class="lbl">chương nội quy</div></div></div>
+      <div class="stat"><div class="ic">📄</div><div><div class="num">24</div><div class="lbl">điều quy định</div></div></div>
+      <div class="stat"><div class="ic">⛔</div><div><div class="num">9</div><div class="lbl">hành vi bị cấm</div></div></div>
+      <div class="stat"><div class="ic">⚠️</div><div><div class="num">3</div><div class="lbl">mức kỷ luật</div></div></div>
+      <div class="stat"><div class="ic">💰</div><div><div class="num">0₫</div><div class="lbl">học phí THCS</div></div></div>
+      <div class="stat"><div class="ic">🤝</div><div><div class="num">3 bên</div><div class="lbl">trường – gia đình – xã hội</div></div></div>
+    </div>
+  </header>
+
+  <!-- MỤC LỤC -->
+  <nav class="toc" aria-label="Mục lục">
+    <h3>📑 Mục lục</h3>
+    <select class="toc-select" id="tocSelect" aria-label="Chọn mục để xem">
+      <option value="">— Chạm để chọn mục cần xem —</option>
+      <option value="#thoi-gian">⏰ Thời gian học tập &amp; chuyên cần</option>
+      <option value="#quyen-nghia-vu">⚖️ Quyền &amp; nghĩa vụ học sinh</option>
+      <option value="#trang-phuc">👔 Trang phục &amp; tác phong</option>
+      <option value="#hoc-tap">💡 Nề nếp học tập · Trung thực · AI</option>
+      <option value="#ung-xu">🤝 Ứng xử · Chống bạo lực · Mạng xã hội</option>
+      <option value="#tai-san">🏫 Tài sản · Vệ sinh · Sách giáo khoa</option>
+      <option value="#an-toan">🛵 An toàn giao thông · PCCC · Sức khỏe</option>
+      <option value="#hoc-phi">💰 Học phí &amp; hỗ trợ người học</option>
+      <option value="#cam">⛔ 9 hành vi học sinh không được làm</option>
+      <option value="#khen-thuong">🏆 Khen thưởng &amp; kỷ luật</option>
+      <option value="#phu-huynh">👨‍👩‍👧 Phối hợp Nhà trường – Phụ huynh</option>
+    </select>
+  </nav>
+
+  <!-- 1. THỜI GIAN -->
+  <section class="c1" id="thoi-gian">
+    <div class="sec-head">
+      <div class="sec-num">⏰</div>
+      <div><h2>Thời gian học tập &amp; chuyên cần</h2><p>Chương II — Điều 4, 5</p></div>
+    </div>
+    <div class="timeline">
+      <div class="t-item">
+        <div class="t-time">🌅 Buổi sáng — 07:00 có mặt</div>
+        <div class="t-desc">Đóng cổng <b>07:05</b> · Tiết 1 bắt đầu <b>07:15</b> (hoặc chào cờ / sinh hoạt đầu giờ).<br>
+        Riêng <b>thứ Hai</b>: có mặt <b>06:55</b>, sinh hoạt dưới cờ lúc <b>07:00</b>.</div>
+      </div>
+      <div class="t-item">
+        <div class="t-time">🌇 Buổi chiều — 13:20 có mặt</div>
+        <div class="t-desc">Đóng cổng <b>13:25</b> · Tiết 1 bắt đầu <b>13:30</b>.</div>
+      </div>
+      <div class="t-item">
+        <div class="t-time">🏃 Đi trễ → báo bộ phận Quản sinh</div>
+        <div class="t-desc">Đến sau giờ đóng cổng không được tự ý đi thẳng vào lớp mà phải báo bộ phận Quản sinh để ghi nhận lý do và cho phép vào lớp. Trễ <b>từ 3 lần/tháng</b>: GVCN thông báo cha mẹ / người giám hộ để phối hợp tìm nguyên nhân, yêu cầu khắc phục; đồng thời ghi nhận vào kết quả đánh giá rèn luyện học kỳ.</div>
+      </div>
+      <div class="t-item">
+        <div class="t-time">📝 Xin nghỉ học</div>
+        <div class="t-desc">Nghỉ <b>1–2 ngày</b>: cha mẹ / người giám hộ gửi Đơn xin phép nghỉ học (có chữ ký) hoặc thông báo trực tiếp cho GVCN qua kênh liên lạc chính thức.<br>
+        Nghỉ <b>từ 3 ngày trở lên</b>: cha mẹ / người giám hộ đến gặp trực tiếp BGH hoặc GVCN, nộp đơn xin phép kèm chứng từ hợp lệ (giấy khám bệnh, chứng nhận y tế…).<br>
+        Nghỉ <b>quá 45 buổi/năm</b> (có phép + không phép, liên tục hoặc không liên tục): <b>không được lên lớp</b>.</div>
+      </div>
+      <div class="t-item">
+        <div class="t-time">🚪 Về sớm / ra khỏi cổng trường</div>
+        <div class="t-desc">Trong giờ học, giờ chuyển tiết và giờ ra chơi: <b>tuyệt đối không tự ý rời khỏi khuôn viên</b> khi chưa có sự đồng ý của BGH hoặc Giám thị. Trường hợp cấp thiết (ốm đau, tai nạn, sự cố gia đình): phải được Giám thị / BGH cho phép và cha mẹ hoặc người giám hộ <b>trực tiếp đến đón</b>.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. QUYỀN & NGHĨA VỤ -->
+  <section class="c2 alt" id="quyen-nghia-vu">
+    <div class="sec-head">
+      <div class="sec-num">⚖️</div>
+      <div><h2>Quyền &amp; nghĩa vụ của học sinh</h2><p>Chương I — Điều 2, 3 · theo Luật Giáo dục 2019 &amp; Thông tư 15/2026</p></div>
+    </div>
+    <div class="two-col">
+      <div class="panel rights">
+        <h3>✅ 5 quyền của học sinh</h3>
+        <ol>
+          <li>Được bình đẳng hưởng giáo dục toàn diện; bảo đảm điều kiện về thời gian, cơ sở vật chất, vệ sinh, an toàn để học tập ở lớp và tự học ở nhà; được cung cấp thông tin về học tập, rèn luyện của mình.</li>
+          <li>Được tôn trọng, bảo vệ, đối xử bình đẳng, dân chủ; được khiếu nại, phản ánh với nhà trường và các cấp quản lý giáo dục; được học vượt lớp, học ở độ tuổi cao hơn quy định.</li>
+          <li>Được tham gia phát triển năng khiếu (môn học, thể thao, nghệ thuật) nếu đủ điều kiện; được giáo dục kỹ năng sống và tư vấn tâm lý học đường.</li>
+          <li>Được nhận học bổng, trợ cấp theo chính sách xã hội, hoàn cảnh khó khăn, năng lực đặc biệt.</li>
+          <li>Được chuyển trường nếu đủ điều kiện; hưởng chính sách ưu đãi, miễn giảm học phí và hỗ trợ chi phí học tập.</li>
+        </ol>
+      </div>
+      <div class="panel duties">
+        <h3>📌 5 nghĩa vụ của học sinh</h3>
+        <ol>
+          <li>Thực hiện nhiệm vụ học tập, rèn luyện theo chương trình, kế hoạch giáo dục và quy tắc ứng xử của nhà trường.</li>
+          <li>Kính trọng cha mẹ, cán bộ, giáo viên, nhân viên và người lớn tuổi; đoàn kết, giúp đỡ nhau; chấp hành Điều lệ nhà trường, Nội quy học sinh và pháp luật.</li>
+          <li>Rèn luyện thân thể, giữ gìn vệ sinh cá nhân, vệ sinh môi trường học đường và nơi công cộng.</li>
+          <li>Tham gia hoạt động tập thể của trường, lớp, Đội TNTP Hồ Chí Minh, Đoàn TNCS Hồ Chí Minh; giúp đỡ gia đình, tham gia lao động và hoạt động xã hội phù hợp lứa tuổi.</li>
+          <li>Giữ gìn, bảo vệ tài sản của nhà trường, nơi công cộng; góp phần xây dựng, bảo vệ và phát huy truyền thống nhà trường.</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. TRANG PHỤC -->
+  <section class="c3" id="trang-phuc">
+    <div class="sec-head">
+      <div class="sec-num">👔</div>
+      <div><h2>Trang phục &amp; tác phong</h2><p>Chương III — Điều 6, 7 · theo Thông tư 26/2009</p></div>
+    </div>
+    <div class="grid g2">
+      <div class="card icon-top">
+        <div class="big">🎓</div>
+        <h3>Đồng phục học tập chính khóa</h3>
+        <ul>
+          <li><b>Áo:</b> sơ mi trắng ngắn/dài tay, cổ bẻ lịch sự, bỏ áo vào trong quần; phù hiệu trường (ghi rõ họ tên, lớp) gắn cố định ở ngực áo bên trái; đeo khăn quàng đỏ (Đội viên), huy hiệu đoàn (Đoàn viên).</li>
+          <li><b>Quần:</b> tây xanh đen / quần âu màu sẫm, lưng cao ngang rốn, ống đứng rộng rãi — <b>không</b> quần bó sát, quần thun, quần jean, quần cạp lưng thấp.</li>
+          <li><b>Giày/dép:</b> giày thể thao, giày Bata hoặc dép sandal có quai hậu chắc chắn — <b>không</b> dép lê, dép xỏ ngón.</li>
+        </ul>
+      </div>
+      <div class="card icon-top">
+        <div class="big">🏃</div>
+        <h3>Thể dục – Quốc phòng &amp; ngày nghỉ</h3>
+        <ul>
+          <li>Mặc bộ quần áo thể thao <b>đúng mẫu quy định</b> của nhà trường trong các tiết GDTC, hoạt động trải nghiệm thể thao, hội thao; áo bỏ trong quần, mang giày thể thao (Bata).</li>
+          <li>Đến trường tham gia sinh hoạt Đội, CLB, ôn tập, hoạt động xã hội <b>vào ngày nghỉ</b>: mặc đồng phục trường hoặc đồng phục thể dục, đảm bảo lịch sự, trang trọng.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card" style="margin-top:16px;">
+      <h3>✂️ Diện mạo &amp; tác phong cá nhân</h3>
+      <ul>
+        <li><b>Đầu tóc:</b> gọn gàng, màu tóc tự nhiên — <b>không</b> nhuộm xanh, đỏ, vàng hoặc tạo kiểu cầu kỳ, khác thường. Nam: cắt tóc ngắn, không để tóc dài phủ tai/gáy, không cạo trọc, không để râu. Nữ: tóc dài phải buộc gọn gàng.</li>
+        <li><b>Trang sức, trang điểm:</b> không trang điểm (không thoa son, đánh phấn, sơn móng tay/chân), không dán hình xăm hoặc xăm hình lên cơ thể. Nam không đeo bông tai; nữ không đeo nhiều bông tai hoặc trang sức đắt tiền gây mất an toàn.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 4. HỌC TẬP & AI -->
+  <section class="c4 alt" id="hoc-tap">
+    <div class="sec-head">
+      <div class="sec-num">💡</div>
+      <div><h2>Nề nếp học tập · Trung thực học thuật · AI</h2><p>Chương IV — Điều 8, 9 · theo Thông tư 15/2026</p></div>
+    </div>
+    <div class="grid g3">
+      <div class="card">
+        <h3>📚 Trách nhiệm trên lớp</h3>
+        <ul>
+          <li>Chuẩn bị đầy đủ SGK, vở ghi, dụng cụ học tập theo yêu cầu từng môn; thuộc bài và làm bài tập đầy đủ trước khi đến lớp.</li>
+          <li>Trong giờ học: mặc đúng đồng phục, ngồi đúng sơ đồ, giữ trật tự, chú ý nghe giảng, ghi chép cẩn thận; chỉ phát biểu khi được giáo viên cho phép.</li>
+          <li>Không nói chuyện riêng, không ăn vụng, không làm việc riêng trong giờ học.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>🛡️ Trung thực kiểm tra</h3>
+        <ul>
+          <li>Tự giác, trung thực trong kiểm tra thường xuyên, giữa kỳ và cuối kỳ.</li>
+          <li><b>Tuyệt đối không:</b> quay cóp, nhìn bài, mang tài liệu trái phép vào phòng thi, trao đổi hoặc nhờ người khác làm bài hộ.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>🤖 Điện thoại &amp; trí tuệ nhân tạo</h3>
+        <ul>
+          <li><b>Không</b> sử dụng điện thoại di động và thiết bị điện tử trong giờ học khi chưa được giáo viên cho phép và không phục vụ mục đích học tập.</li>
+          <li>Điện thoại phải <b>tắt nguồn hoặc để chế độ im lặng</b>, để đúng nơi quy định; nhà trường không khuyến khích mang điện thoại đắt tiền — học sinh tự bảo quản tài sản cá nhân.</li>
+          <li>Chỉ sử dụng công nghệ, AI <b>theo đúng hướng dẫn của giáo viên</b> phục vụ tìm kiếm tài liệu, học tập, sáng tạo.</li>
+          <li><b>Nghiêm cấm:</b> dùng AI gian lận học thuật, sao chép toàn bộ sản phẩm do AI tạo ra để nộp làm bài của mình, chỉnh sửa/giả mạo hình ảnh, âm thanh, thông tin gây ảnh hưởng xấu đến thầy cô, bạn bè, nhà trường.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. ỨNG XỬ -->
+  <section class="c5" id="ung-xu">
+    <div class="sec-head">
+      <div class="sec-num">🤝</div>
+      <div><h2>Ứng xử văn hóa · Chống bạo lực · Mạng xã hội</h2><p>Chương V — Điều 10, 11, 12</p></div>
+    </div>
+    <div class="grid g3">
+      <div class="card">
+        <h3>🌸 Văn hóa ứng xử học đường</h3>
+        <ul>
+          <li>Kính trọng, lễ phép, chào hỏi cán bộ, giáo viên, nhân viên và khách đến thăm trường.</li>
+          <li>Sử dụng ngôn ngữ văn minh, trong sáng — không nói tục, chửi thề, xúc phạm, miệt thị, lăng mạ hoặc đe dọa người khác.</li>
+          <li>Hòa nhã, thân thiện, đoàn kết, tương trợ bạn bè; biết lắng nghe, tôn trọng sự khác biệt, giúp đỡ bạn có hoàn cảnh khó khăn.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>🚫 Phòng chống bạo lực học đường</h3>
+        <ul>
+          <li><b>Nghiêm cấm:</b> đánh nhau, tổ chức hoặc tham gia đánh nhau, xúi giục, quay phim cổ vũ bạo lực trong và ngoài nhà trường.</li>
+          <li><b>Nghiêm cấm:</b> xúc phạm danh dự, nhân phẩm, xâm phạm thân thể, cô lập, bắt nạt, quấy rối dưới mọi hình thức — trực tiếp hoặc trên môi trường mạng.</li>
+          <li>Khi phát hiện hành vi bạo lực hoặc nguy cơ mất an toàn → <b>báo ngay</b> cho GVCN, Giám thị, Bộ phận Tư vấn tâm lý học đường hoặc BGH.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>📱 Trên mạng xã hội</h3>
+        <ul>
+          <li>Sử dụng Facebook, Zalo, TikTok, YouTube… đúng pháp luật, phù hợp lứa tuổi THCS.</li>
+          <li><b>Không</b> tự ý ghi âm, ghi hình, chụp ảnh, livestream các tiết học, hoạt động nội bộ hoặc thông tin cá nhân của người khác để đăng mạng khi chưa được đồng ý.</li>
+          <li><b>Không</b> đăng tải, bình luận, chia sẻ tin sai sự thật, tin đồn chưa kiểm chứng, văn hóa phẩm độc hại, dâm ô, bạo lực, hoặc nội dung bôi nhọ, xúc phạm uy tín nhà trường, thầy cô, bạn bè.</li>
+          <li>Nguyên tắc: <b>“ĐỪNG – KIỂM CHỨNG – KHÔNG LAN TRUYỀN”</b></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. TÀI SẢN & SÁCH -->
+  <section class="c6 alt" id="tai-san">
+    <div class="sec-head">
+      <div class="sec-num">🏫</div>
+      <div><h2>Tài sản · Vệ sinh · Sách giáo khoa</h2><p>Chương VI — Điều 13, 14 · theo Nghị định 271/2026</p></div>
+    </div>
+    <div class="grid g2">
+      <div class="card">
+        <h3>🧹 Bảo vệ tài sản &amp; vệ sinh chung</h3>
+        <ul>
+          <li>Có ý thức bảo vệ tài sản chung: bàn ghế, bảng đen, hệ thống điện, quạt, máy chiếu, thiết bị thí nghiệm, thư viện — không viết, vẽ, bôi bẩn, khắc tên lên bàn ghế, tường học.</li>
+          <li>Cố ý làm hư hỏng, mất mát tài sản → <b>bồi thường thiệt hại</b> theo pháp luật và chịu hình thức kỷ luật tương ứng.</li>
+          <li>Không xả rác bừa bãi, thực hiện <b>phân loại rác tại nguồn</b>; không mang đồ ăn, nước uống có gas vào phòng học; vứt rác đúng nơi quy định.</li>
+          <li>Cuối mỗi buổi học, lớp trực nhật quét dọn lớp học, lau bảng, đóng cửa sổ và tắt toàn bộ thiết bị điện.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>📖 Bảo quản sách giáo khoa mượn từ thư viện</h3>
+        <ul>
+          <li>Giữ gìn, bảo quản cẩn thận — không làm rách, viết, vẽ hoặc làm mất sách.</li>
+          <li>Làm mất / hư hỏng do chủ quan → học sinh và gia đình <b>bồi hoàn</b>: ưu tiên bằng hiện vật là SGK cùng loại, đúng danh mục và quy chuẩn kỹ thuật.</li>
+          <li>Bồi hoàn bằng tiền: sách dùng <b>dưới 1 năm: 80%</b> giá trị · <b>1–3 năm: 50%</b> · <b>3–5 năm: 20%</b> · trên 5 năm hoặc hỏng do thiên tai, hỏa hoạn, bất khả kháng: <b>không thu</b>.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. AN TOÀN -->
+  <section class="c7" id="an-toan">
+    <div class="sec-head">
+      <div class="sec-num">🛵</div>
+      <div><h2>An toàn giao thông · PCCC · Sức khỏe</h2><p>Chương VII — Điều 15, 16 · theo CV 7608/SGDĐT-KHTC</p></div>
+    </div>
+    <div class="grid g3">
+      <div class="card">
+        <h3>🚦 Chấp hành luật giao thông</h3>
+        <ul>
+          <li>Đi xe đạp, xe đạp điện: chấp hành nghiêm Luật Giao thông đường bộ; đi đúng phần đường, <b>không</b> dàn hàng ngang, lạng lách, đánh võng; không sử dụng ô (dù), điện thoại khi đang điều khiển phương tiện.</li>
+          <li><b>Đội mũ bảo hiểm đạt chuẩn và cài đúng quy cách</b> khi ngồi trên xe mô tô, xe gắn máy, xe đạp điện, xe máy điện.</li>
+          <li><b>Tuyệt đối không</b> điều khiển xe mô tô, xe gắn máy, xe máy điện khi chưa đủ tuổi hoặc chưa có giấy phép lái xe.</li>
+          <li>Đến cổng trường: <b>xuống xe, dẫn bộ</b> vào khu vực để xe theo đúng luồng phân luồng; xếp xe gọn gàng, đúng vị trí quy định của từng lớp.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>🔥 PCCC &amp; an ninh</h3>
+        <ul>
+          <li>Thực hiện nghiêm các quy định về phòng cháy chữa cháy, an toàn điện.</li>
+          <li>Không tự ý can thiệp vào hệ thống điện, thiết bị PCCC của nhà trường.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>🏥 Khám sức khỏe định kỳ</h3>
+        <ul>
+          <li>Tích cực tham gia khám sức khỏe định kỳ đầu năm học do nhà trường phối hợp cơ quan y tế tổ chức.</li>
+          <li>Kinh phí được bảo đảm từ <b>ngân sách nhà nước</b> — nhà trường <b>không xây dựng hoặc tổ chức thu bất kỳ khoản tiền nào</b> từ học sinh và cha mẹ cho nội dung này.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. HỌC PHÍ -->
+  <section class="c8 alt" id="hoc-phi">
+    <div class="sec-head">
+      <div class="sec-num">💰</div>
+      <div><h2>Học phí &amp; hỗ trợ người học</h2><p>Chương VIII — Điều 17 · NQ 217/2025/QH15, NĐ 238/2025, CV 7608/SGDĐT-KHTC</p></div>
+    </div>
+    <div class="highlight">
+      <!-- <div class="big">🎓 🤍 </div> -->
+      <div>
+        <h3>Học sinh THCS được MIỄN HỌC PHÍ — nhà trường KHÔNG tổ chức thu học phí</h3>
+        <p>Học sinh diện chính sách (mồ côi, khuyết tật, hộ nghèo, hộ cận nghèo, học sinh dân tộc thiểu số…) được hưởng đầy đủ chính sách hỗ trợ chi phí học tập và các chế độ ưu đãi theo NĐ 238/2025/NĐ-CP, NĐ 66/2025/NĐ-CP và các văn bản hướng dẫn hiện hành.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. HÀNH VI CẤM -->
+  <section class="c9" id="cam">
+    <div class="sec-head">
+      <div class="sec-num">⛔</div>
+      <div><h2>9 hành vi học sinh KHÔNG được làm</h2><p>Chương IX — Điều 18 · theo Thông tư 15/2026 &amp; 19/2025</p></div>
+    </div>
+    <div class="forbid">
+      <div class="card"><div class="n">1 ⛔ KHÔNG </div>Xúc phạm danh dự, nhân phẩm, xâm phạm thân thể giáo viên, cán bộ, nhân viên nhà trường, người khác và học sinh khác — bao gồm cả các hành vi trên không gian mạng.</div>
+      <div class="card"><div class="n">2 ⛔ KHÔNG </div>Gian lận trong học tập, kiểm tra, thi cử, tuyển sinh; giả mạo chữ ký, giả mạo hồ sơ, tài liệu, dữ liệu điểm số.</div>
+      <div class="card"><div class="n">3 ⛔ KHÔNG </div>Mua bán, tàng trữ, sử dụng rượu, bia, thuốc lá, thuốc lá điện tử, thuốc lá nung nóng, chất gây nghiện, chất kích thích, chất cấm và các vật dụng liên quan bị pháp luật cấm.</div>
+      <div class="card"><div class="n">4 ⛔ KHÔNG </div>Mang theo hoặc sử dụng hung khí, dao, vật sắc nhọn, pháo, chất nổ, chất cháy, hóa chất nguy hiểm hoặc vật có khả năng gây sát thương vào nhà trường.</div>
+      <div class="card"><div class="n">5 ⛔ KHÔNG </div>Đánh nhau, gây rối trật tự, an ninh trong nhà trường và nơi công cộng; tổ chức hoặc tham gia cá cược, đánh bạc dưới mọi hình thức.</div>
+      <div class="card"><div class="n">6 ⛔ KHÔNG </div>Sử dụng, trao đổi, lan truyền các sản phẩm văn hóa có nội dung kích động bạo lực, đồi trụy; sử dụng đồ chơi có hại cho sự phát triển lành mạnh của bản thân.</div>
+      <div class="card"><div class="n">7 ⛔ KHÔNG </div>Trộm cắp, chiếm đoạt, phá hoại tài sản của nhà trường và của người khác; ép buộc người khác đưa tiền, tài sản.</div>
+      <div class="card"><div class="n">8 ⛔ KHÔNG </div>Tự ý rời khỏi trường, vượt rào, đi vào các khu vực nguy hiểm hoặc khu vực cấm khi chưa được sự đồng ý của nhà trường.</div>
+      <div class="card"><div class="n">9 ⛔ KHÔNG </div>Sử dụng điện thoại di động và thiết bị điện tử trong giờ học không phục vụ cho việc học tập và không được giáo viên cho phép.</div>
+    </div>
+  </section>
+
+  <!-- 10. KHEN THƯỞNG & KỶ LUẬT -->
+  <section class="c10 alt" id="khen-thuong">
+    <div class="sec-head">
+      <div class="sec-num">🏆</div>
+      <div><h2>Vinh danh - Khen thưởng &amp; Kỷ luật</h2><p>Chương X — Điều 19, 20, 21 · theo Thông tư 19/2025 &amp; 22/2021</p></div>
+    </div>
+
+    <h3 class="block-title" style="color:#0a9b6c;">🌟 Khen thưởng học sinh</h3>
+    <div class="grid g2" style="margin-bottom:26px;">
+      <div class="card">
+        <h3>📣 Các hình thức tuyên dương, khen thưởng</h3>
+        <ul>
+          <li>Vinh danh - Tuyên dương <b>trước lớp</b>.</li>
+          <li>Vinh danh - Tuyên dương <b>trước toàn trường</b> (dưới cờ).</li>
+          <li>Tặng <b>Giấy khen của Hiệu trưởng</b>.</li>
+          <li>Trao <b>Thư khen</b> của Hiệu trưởng / Giáo viên đối với học sinh có tiến bộ vượt bậc hoặc có hành động đẹp, việc làm tốt.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>🎖️ Danh hiệu cuối năm học</h3>
+        <ul>
+          <li><b>“Học sinh Xuất sắc”</b>: kết quả rèn luyện cả năm đạt mức <b>Tốt</b>, kết quả học tập cả năm đạt mức <b>Tốt</b> và có ít nhất <b>06 môn</b> học đánh giá bằng nhận xét kết hợp điểm số đạt ĐTBmcn <b>từ 9,0 điểm</b> trở lên.</li>
+          <li><b>“Học sinh Giỏi”</b>: kết quả rèn luyện cả năm đạt mức <b>Tốt</b> và kết quả học tập cả năm đạt mức <b>Tốt</b>.</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3 class="block-title" style="color:#c2255c;">⚠️ Kỷ luật — 3 mức theo tính chất vi phạm</h3>
+    <p style="font-size:15.5px; color:#5b6b7c; margin-bottom:14px;">Không áp dụng hình phạt bạo lực, xúc phạm danh dự, nhân phẩm học sinh.</p>
+    <div class="ladder">
+      <div class="step s1">
+        <div class="lvl">Mức độ 1 · vi phạm lần đầu, mức nhẹ</div>
+        <h3>📢 Nhắc nhở</h3>
+        <p>Vi phạm có tác hại đến bản thân học sinh.</p>
+      </div>
+      <div class="step s2">
+        <div class="lvl">Mức độ 2 · tái phạm / ảnh hưởng nhóm, lớp</div>
+        <h3>📝 Phê bình</h3>
+        <p>Đã bị nhắc nhở nhưng tiếp tục tái phạm ở mức 1, hoặc vi phạm mức 2. GVCN trực tiếp phê bình và thông báo cho cha mẹ để phối hợp giáo dục.</p>
+      </div>
+      <div class="step s3">
+        <div class="lvl">Mức độ 3 · ảnh hưởng phạm vi nhà trường</div>
+        <h3>📄 Bản tự kiểm điểm</h3>
+        <p>Đã bị phê bình mà tiếp tục vi phạm mức 2, hoặc vi phạm mức 3. Bản tự kiểm điểm phải có <b>xác nhận và cam kết của cha mẹ / người giám hộ</b>, lưu giữ trong hồ sơ nhà trường.</p>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:18px;">
+      <h3>💚 Hoạt động hỗ trợ học sinh khắc phục vi phạm (Điều 21)</h3>
+      <ul>
+        <li>Khuyên bảo, động viên, <b>tư vấn tâm lý học đường</b>, hỗ trợ kỹ năng sống.</li>
+        <li>Phân công giáo viên, <b>Tổng phụ trách Đội</b> giúp đỡ học sinh trong quá trình khắc phục vi phạm.</li>
+        <li>Yêu cầu học sinh tham gia một số <b>hoạt động công ích</b>, lao động vệ sinh trường lớp hoặc hoạt động xã hội phù hợp để sửa chữa khuyết điểm.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 11. PHỐI HỢP PHỤ HUYNH -->
+  <section class="c11" id="phu-huynh">
+    <div class="sec-head">
+      <div class="sec-num">👨‍👩‍👧</div>
+      <div><h2>Phối hợp Nhà trường – Gia đình – Xã hội</h2><p>Chương XI, XII — Điều 22, 23, 24 · theo TT 55/2011</p></div>
+    </div>
+    <div class="grid g3">
+      <div class="card">
+        <h3>🏫 Nhà trường &amp; Giáo viên</h3>
+        <ul>
+          <li><b>Ban Giám hiệu:</b> tổ chức tuyên truyền, quán triệt Nội quy; chỉ đạo, kiểm tra việc thực hiện khen thưởng, kỷ luật công bằng, khách quan, đúng pháp luật.</li>
+          <li><b>GVCN:</b> là cầu nối giữa Nhà trường và Gia đình; thường xuyên theo dõi nề nếp, kết quả rèn luyện; kịp thời thông báo tình hình học tập, vi phạm (nếu có) cho cha mẹ; chủ trì xử lý vi phạm theo thẩm quyền.</li>
+          <li><b>GV bộ môn, nhân viên, Giám thị:</b> nhắc nhở, chỉnh đốn tác phong, nề nếp học sinh trong giờ học và khu vực quản lý; phối hợp với GVCN giáo dục học sinh.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>👨‍👩‍👧 Gia đình &amp; Ban đại diện CMHS</h3>
+        <ul>
+          <li>Phối hợp chặt chẽ với nhà trường trong quản lý, giáo dục con em; tôn trọng thầy cô giáo; chủ động nhắc nhở con chấp hành nghiêm Nội quy.</li>
+          <li>Thường xuyên liên hệ với GVCN qua <b>sổ liên lạc điện tử / kênh thông tin chính thức</b>; tham gia đầy đủ các cuộc họp cha mẹ học sinh định kỳ.</li>
+          <li><b>Trực tiếp chịu trách nhiệm bồi thường thiệt hại</b> nếu con em gây hư hỏng, mất mát tài sản của nhà trường hoặc của cá nhân khác theo quy định pháp luật.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>📜 Tổ chức thực hiện</h3>
+        <ul>
+          <li>Quy chế được <b>phổ biến rộng rãi</b> đến toàn thể CB-GV-NV, học sinh và cha mẹ học sinh; <b>niêm yết công khai</b> tại bảng tin và đăng tải trên website chính thức của nhà trường.</li>
+          <li>Tất cả học sinh có trách nhiệm thực hiện nghiêm chỉnh; CB-GV-NV và các tổ chức đoàn thể đôn đốc, kiểm tra, giám sát việc thực hiện.</li>
+          <li>Trong quá trình thực hiện, nếu có nội dung phát sinh hoặc văn bản cấp trên thay đổi → Hiệu trưởng xem xét điều chỉnh, bổ sung Quy chế cho phù hợp.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="parent-banner">
+      <h3>💌 Lời nhắn gửi phụ huynh học sinh 🤍</h3>
+      <ul>
+        <li>Quý phụ huynh vui lòng cùng nhà trường <b>nhắc nhở con em</b> thực hiện nghiêm Nội quy: đi học đúng giờ, mặc đồng phục đúng quy định, giữ gìn vệ sinh và tài sản chung.</li>
+        <li><b>Giữ liên lạc thường xuyên</b> với giáo viên chủ nhiệm qua sổ liên lạc điện tử và các kênh chính thức của trường.</li>
+        <li>Khi con có biểu hiện bất thường hoặc vi phạm, nhà trường sẽ <b>thông báo trực tiếp</b> — rất mong quý phụ huynh phối hợp, cùng ký xác nhận và đồng hành giúp con khắc phục.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="foot">
+    <div class="cols">
+      <div class="col">
+        <h4>📌 Thông tin văn bản</h4>
+        <ul>
+          <li>Dự thảo Quyết định ban hành Quy chế Nội quy học sinh.</li>
+          <li>Trường THCS Văn Lương — UBND xã Long Điền.</li>
+          <li>Năm học 2026–2027 · Hiệu lực thi hành kể từ ngày ký.</li>
+          <li>Ký bởi: Hiệu trưởng <b>Lê Trần Mộng Thành</b>.</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h4>⚖️ Căn cứ pháp lý</h4>
+        <ul>
+          <li>Luật Giáo dục 2019 (sửa đổi, bổ sung 2025).</li>
+          <li>TT 15/2026 (Điều lệ trường), TT 19/2025 (khen thưởng–kỷ luật).</li>
+          <li>TT 22/2021 (đánh giá HS), TT 26/2009 (đồng phục).</li>
+          <li>NĐ 271/2026 (miễn phí, cho mượn SGK).</li>
+          <li>QĐ 5067/QĐ-UBND (khung thời gian năm học), CV 7608/SGDĐT-KHTC (học phí, khoản thu).</li>
+        </ul>
+      </div>
+    </div>
+    <div class="credit">Thiết kế và xây dựng bởi Lê Trần Mộng Thành — Nội dung thuộc về Trường THCS Văn Lương.</div>
+  </footer>
+
+</div>
+
+<button id="toTop" aria-label="Về đầu trang">⬆️</button>
+<script>
+  var btn = document.getElementById('toTop');
+  window.addEventListener('scroll', function(){
+    btn.classList.toggle('show', window.scrollY > 600);
+  }, { passive:true });
+  btn.addEventListener('click', function(){
+    window.scrollTo({ top:0, behavior:'smooth' });
+  });
+
+  /* Menu dropdown trên di động */
+  var menuBtn = document.getElementById('menuBtn');
+  var mobileMenu = document.getElementById('mobileMenu');
+  menuBtn.addEventListener('click', function(){
+    var open = mobileMenu.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    menuBtn.textContent = open ? '✕' : '☰';
+    menuBtn.setAttribute('aria-label', open ? 'Đóng menu điều hướng' : 'Mở menu điều hướng');
+  });
+  mobileMenu.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){
+      mobileMenu.classList.remove('open');
+      menuBtn.setAttribute('aria-expanded', 'false');
+      menuBtn.textContent = '☰';
+    });
+  });
+
+  /* Mục lục dropdown */
+  var tocSelect = document.getElementById('tocSelect');
+  tocSelect.addEventListener('change', function(){
+    if (this.value) { window.location.hash = this.value; }
+  });
+</script>
+</body>
+</html>
